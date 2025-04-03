@@ -10,7 +10,10 @@ codeunit 50404 "Add text in Description"
 
         if TargetItem.Description <> '' then begin
 
-            TargetItem.Description := TargetItem.Description + ' :)GR';
+            //TargetItem.Description := TargetItem.Description + ' :)GR';
+            TargetItem.Validate("Description", TargetItem.Description + ' haha');
+
+
 
             TargetItem.Modify();
 
